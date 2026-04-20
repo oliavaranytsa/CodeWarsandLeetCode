@@ -31,4 +31,6 @@ class Solution:
                 successor = successor.left
 
             root.val = successor.val
+            root.right = self.deleteNode(root.right, successor.val)
+
         return root
