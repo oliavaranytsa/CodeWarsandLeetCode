@@ -10,9 +10,9 @@ def tree_by_levels(node):
         result.append(current.value)
 
         if current.left is not None:
-            result.append(current.left)
+            queue.append(current.left)
 
         if current.right is not None:
-            result.append(current.right)
+            queue.append(current.right)
 
     return result
